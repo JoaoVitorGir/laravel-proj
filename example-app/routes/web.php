@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/teste/', function () {
+    $dados = [
+        'titulo' => 'Minha Página',
+        'mensagem' => 'Bem-vindo à minha página!'
+    ];
+    
+    //return view('welcome');
+    return view('home',$dados);
 });
+
+
