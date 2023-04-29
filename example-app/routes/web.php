@@ -13,20 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/lista/{tablela}',
+    'App\Http\Controllers\ListaController@listaTabela');
 
-Route::get('/teste', function () {
-    $dados = [
-        'titulo' => 'Minha Página',
-        'mensagem' => 'Bem-vindo à minha página!'
-    ];
-    
-    //return view('welcome');
-    return view('home',$dados);
-});
-
-Route::get('ola', function () {
-    return view('ola');
-});
-
-Route::get('/produtos',
-    'App\Http\Controllers\ProdutosController@listaProdutos');
+Route::get('/home',
+    'App\Http\Controllers\HomeController@Home');

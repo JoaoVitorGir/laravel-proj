@@ -1,0 +1,50 @@
+:root{
+    --cor-font : white;
+    --cor-primaria : #74b9ff;
+    --cor-topbar-title : #ff6565;
+    --cor-container-principal : rgb(176, 176, 176);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+}
+
+*{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.topbar-padrao{
+    background-color: var(--cor-primaria) !important;
+}
+
+.div-table{
+    padding: 2em 8em;
+}
+
+.font-topbar{
+    color: var(--cor-font) !important;
+}
+
+.font-topbar-title{
+    color:  var(--cor-topbar-title) !important;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.table-title-padrao{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.div-home-lista-tabelas{
+    padding: 2em 10em;
+}
+
+.container-principal{
+    background-color: var(--cor-container-principal);
+}
+
+.div-footer{
+    background-color: var(--cor-primaria);
+}

@@ -1,0 +1,2 @@
+php artisan migrate - Executa migration
+php artisan make:migration nome_da_migration - Cria novas Migrations

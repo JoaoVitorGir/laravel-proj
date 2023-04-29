@@ -3,21 +3,25 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
-   
+    
     public function up(): void
     {
-        Schema::create('produtos', function (Blueprint $table){
+        //DB::statement('CREATE SCHEMA principal');
+
+        Schema::create('principal.categorias', function (Blueprint $table) {
             $table->id();
-            $table->string('nome',100);
-            $table->string('descricao',200);
+            $table->string('nome');
+            //$table->timestamps();
         });
     }
+
     
     public function down(): void
     {
-        Schema::dropIfExists('produtos');
+        Schema::dropIfExists('principal.categorias');
     }
 };
