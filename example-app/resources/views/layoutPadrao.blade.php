@@ -1,3 +1,5 @@
+{{-- os @yield vão se preenchidos pela view --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
     <title>@yield('titulo')</title>
 </head>
 <body>
+    {{-- padrão em todas as paginas  --}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light topbar-padrao">
         <div class="container">
             <a class="navbar-brand font-topbar-title" href="{{url('/home')}}">WEB PAGE</a>
@@ -25,32 +28,9 @@
             </div>
         </div>
     </nav>
-
-    <div class="container container-principal">
-        <div class="row">
-            <div class="col-2 p-1">
-                @yield('lista-tabelas')
-            </div>
+    {{-- aqui vai qual quer coisa e vai ficar a baixo sempre da barra de titulo --}}
+    @yield('corpo')
         
-            <div class="col-10">
-                @yield('corpo')
-            </div>
-        </div>    
-    </div>
-    
-    <nav class="nav fixed-bottom div-footer">
-        <div class="container-fluid">
-          {{-- <a class="navbar-brand" href="#">Fixed bottom</a> --}}
-          <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link font-topbar" href="#">João Vitor Girardi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-topbar" href="#">Bla.. bla.. bla..</a>
-              </li>
-          </ul>
-        </div>
-    </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

@@ -2,7 +2,7 @@
     --cor-font : white;
     --cor-primaria : #74b9ff;
     --cor-topbar-title : #ff6565;
-    --cor-container-principal : rgb(176, 176, 176);
+    --cor-container-principal : white;
 }
 
 @font-face {
@@ -35,6 +35,7 @@
 .table-title-padrao{
     font-size: 1.5em;
     font-weight: 700;
+    background-color: #80808063;
 }
 
 .div-home-lista-tabelas{
@@ -47,4 +48,82 @@
 
 .div-footer{
     background-color: var(--cor-primaria);
+}
+
+.col-10{
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.list-group-item{
+    background-color: inherit;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+.centraliza-pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.list-group-item:last-child{
+    border-bottom: none;
+}
+
+.a-icone-excluir, .a-icone-editar{
+    text-decoration: none;
+    margin: 5px;
+}
+
+.a-icone-excluir:hover{
+    color: red;
+}
+
+.a-icone-editar:hover{
+    color: orange;
+}
+
+.a-icone-excluir {
+    color: red;
+}
+
+.a-icone-editar {
+    color: orange;
+}
+
+.icone-editar{
+    filter: drop-shadow(2px 4px 4px black);
+}
+
+.icone-editar:hover{
+    filter: none;
+}
+
+.icone-excluir{
+    filter:drop-shadow(2px 4px 4px black);
+}
+
+.icone-excluir:hover{
+    filter:none;
+}
+
+.form-campo-id {
+    color: red;
+}
+
+.form-campo-id:focus {
+    color: red;
+    background-color: #e9ecef;
+    opacity: 1;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.form-text {
+    font-size: 0.775em;
+}
+
+.form-label {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
 }

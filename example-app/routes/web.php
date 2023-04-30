@@ -13,8 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/lista/{tablela}',
+// rotas GET
+
+Route::get('/lista/{tabela}',
     'App\Http\Controllers\ListaController@listaTabela');
+
+Route::get('/lista/{tabela}/editar',
+    'App\Http\Controllers\EditarRegistroController@editar');
 
 Route::get('/home',
     'App\Http\Controllers\HomeController@Home');
+
+// rotas POST
+
+Route::post('/lista/{tabela}/editar',
+    'App\Http\Controllers\EditarRegistroController@salvarEdicao');
