@@ -11,7 +11,7 @@
                 {{$tabela}}
             </div>
             <div class="card-body">
-                <form action=" {{ url('/lista/'.$tabela.'/editar') }} " method="POST">
+                <form action="{{ url('/lista/'.$tabela.'/editar') }}" method="POST">
                     @csrf
                     {{-- percorre todos os campos e diciona eles em um input --}}
                     @foreach($registro[0] as $key => $value)

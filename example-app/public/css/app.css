@@ -91,21 +91,14 @@
     color: orange;
 }
 
-.icone-editar{
+.icone-editar, .icone-excluir{
     filter: drop-shadow(2px 4px 4px black);
 }
 
-.icone-editar:hover{
+.icone-editar:hover, .icone-excluir:hover{
     filter: none;
 }
 
-.icone-excluir{
-    filter:drop-shadow(2px 4px 4px black);
-}
-
-.icone-excluir:hover{
-    filter:none;
-}
 
 .form-campo-id {
     color: red;
@@ -126,4 +119,39 @@
 .form-label {
     font-weight: 700;
     margin-bottom: 0.2rem;
+}
+
+.btn-icon-delete{
+    color: red;
+    padding: 0;
+}
+
+.btn-icon-delete:hover{
+    color: red;
+}
+
+.btn-icon-delete:focus, .btn-adicionar:focus, .btn-lupa-pesquisar:focus{
+    box-shadow: none;
+}
+
+.text-alert-delete-registro{
+    color: red;
+    font-weight: 700;
+}
+
+.posicao-name-campo{
+    text-align: left;
+}
+
+.link-add-item{
+    color: orange;
+}
+
+.link-add-item:hover{
+    color: orange;
+}
+
+.btn-lupa-pesquisar{
+    padding: 0;
+    margin: 0;
 }
